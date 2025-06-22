@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bazaarly - Add to Cart Shopping</title>
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Images/favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <div id="navbar">
+    <div class="logo">
+      <a href="Index.html" class="logo-link">Bazaarly</a>
+    </div>
+
+    <!-- ✅ Links shown on large screens -->
+    <ul class="nav-links">
+      <li>
+        <a href="About.html" class="link">
+          <img class="dev-icon" src="Images/about3.png" alt="About" />
+          About
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/+923029821121" class="link">
+          <img class="dev-icon" src="Images/devloper.png" alt="Connect" />
+          Connect
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Beginner-Coder-ALEX" class="link">
+          <img class="dev-icon" src="Images/Github.png" alt="GitHub" />
+          GitHub
+        </a>
+      </li>
+           <li>
+          <a href="Mubeen-Resume.docx" download class="resume-btn"
+            >Download Resume</a
+          >
+        </li>
+    </ul>
+
+    <!-- ✅ Hamburger menu for small screens -->
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="About.html">About</a></li>
+              <li><a href="https://wa.me/+923029821121">Connect</a></li>
+              <li><a href="https://github.com/Beginner-Coder-ALEX">GitHub</a></li>
+               <li>
+          <a href="Mubeen-Resume.docx" download class="resume-btn"
+            >Download Resume</a
+          >
+        </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Theme Toggle -->
+  <div class="theme-toggle-wrapper">
+    <button id="theme-toggle">🌗 Toggle Theme</button>
+  </div>
+
+  <!-- ✅ Loader (IMPORTANT) -->
+  <div class="loader-wrapper" ">
+    <span class="loader"></span>
+  </div>
+
+  <!-- ✅ Main Container -->
+  <div class="container">
+
+    <!-- ✅ Shopping Header -->
+    <div class="shop-header">
+      <h2 class="main-Heading">Shopping Area</h2>
+      <div class="add-cart">
+        <img class="cart-img" src="Images/Cart.png" alt="Cart">
+        <span class="quantity">0</span>
+      </div>
+    </div>
+
+    <!-- ✅ Search and Sort -->
+    <div class="search-sort-bar">
+      <input type="text" id="search-input" placeholder="🔍Search products..." />
+      <select id="sort-select">
+        <option value="">Sort by</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+        <option value="a-z">Name: A-Z</option>
+        <option value="z-a">Name: Z-A</option>
+      </select>
+    </div>
+
+    <!-- ✅ Product Grid -->
+    <div class="product-list">
+      <!-- Products will be rendered here by JS -->
+    </div>
+
+    <!-- ✅ Cart Sidebar -->
+    <div class="card">
+      <div class="card-list"></div>
+      <div class="item-infoContainer">
+        <div class="total">0</div>
+        <div class="close-card">Close</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Toast Container -->
+  <div id="toast-container"></div>
+
+  <!-- ✅ Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <ul id="footer-links">
+        <li><a href="About.html">About</a></li>
+        <li><a href="https://wa.me/+923029821121">Contact Dev</a></li>
+        <li><a href="https://github.com/Beginner-Coder-ALEX">GitHub</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Bazaarly. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ✅ Back to Top -->
+  <button id="back-to-top">🔝</button>
+
+  <!-- ✅ Script -->
+  <script src="script.js"></script>
+</body>
+</html>
